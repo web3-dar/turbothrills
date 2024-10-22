@@ -3,6 +3,9 @@ import clien1 from '../../assets/images/client1.jpeg';
 import clien2 from '../../assets/images/client2_india.jpeg';
 import client3 from '../../assets/images/clien3.webp';
 
+// Default avatar image for user-submitted reviews
+const defaultAvatar = "https://www.gravatar.com/avatar/?d=mp";  // Using Gravatar default icon
+
 const testimonials = [
   {
     name: "Alice Johnson",
@@ -23,28 +26,39 @@ const testimonials = [
 
 const Reviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [name, setName] = useState(''); // For user input name
   const [review, setReview] = useState('');
-  const [submittedReviews, setSubmittedReviews] = useState<string[]>([]); // Specify the type of submittedReviews as string array
+  const [allTestimonials, setAllTestimonials] = useState(testimonials); // Manage all testimonials including user-submitted ones
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % allTestimonials.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + allTestimonials.length) % allTestimonials.length);
   };
 
-  // Specify the type of the event parameter
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  };
+
   const handleReviewChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setReview(e.target.value);
   };
 
-  // Specify the type of the event parameter
   const handleSubmitReview = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (review.trim() !== "") {
-      setSubmittedReviews((prevReviews) => [...prevReviews, review]);
-      setReview(''); // Clear the review text area
+    if (review.trim() !== "" && name.trim() !== "") {
+      // Create a new testimonial object
+      const newTestimonial = {
+        name,
+        comment: review,
+        image: defaultAvatar, // Set default avatar for new reviews
+      };
+      // Add the new testimonial to the list and reset the form fields
+      setAllTestimonials((prevTestimonials) => [...prevTestimonials, newTestimonial]);
+      setName('');
+      setReview('');
     }
   };
 
@@ -56,12 +70,12 @@ const Reviews = () => {
           <button onClick={handlePrev} className="text-2xl text-[#c30101]" aria-label="Previous Testimonial">&lt;</button>
           <div className="text-center">
             <img
-              src={testimonials[currentIndex].image}
-              alt={testimonials[currentIndex].name}
+              src={allTestimonials[currentIndex].image}
+              alt={allTestimonials[currentIndex].name}
               className="w-20 h-20 rounded-full mx-auto mb-2"
             />
-            <h3 className="font-semibold">{testimonials[currentIndex].name}</h3>
-            <p className="text-gray-600">{testimonials[currentIndex].comment}</p>
+            <h3 className="font-semibold">{allTestimonials[currentIndex].name}</h3>
+            <p className="text-gray-600">{allTestimonials[currentIndex].comment}</p>
           </div>
           <button onClick={handleNext} className="text-2xl text-[#c30101]" aria-label="Next Testimonial">&gt;</button>
         </div>
@@ -69,12 +83,21 @@ const Reviews = () => {
 
       {/* Add Review */}
       <form onSubmit={handleSubmitReview} className="max-w-lg mx-auto space-y-4">
+        <input
+          type="text"
+          value={name}
+          onChange={handleNameChange}
+          placeholder="Your Name"
+          className="w-full p-2 border rounded-md"
+          required
+        />
         <textarea
           value={review}
           onChange={handleReviewChange}
           placeholder="Add your review here..."
           className="w-full p-2 border rounded-md"
-          rows={4} // Adding rows for better visibility
+          rows={4}
+          required
         />
         <button
           type="submit"
@@ -83,16 +106,6 @@ const Reviews = () => {
           Submit Review
         </button>
       </form>
-
-      {/* Display Submitted Reviews */}
-      <div className="mt-6 max-w-lg mx-auto">
-        <h2 className="text-xl font-semibold">Submitted Reviews:</h2>
-        <ul className="list-disc pl-5">
-          {submittedReviews.map((rev, index) => (
-            <li key={index} className="mt-2">{rev}</li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 };

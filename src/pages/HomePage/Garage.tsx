@@ -57,7 +57,6 @@ const YourGarage = () => {
               <div>
                 <label className="block text-sm font-semibold">State</label>
                 <select className="mt-1 w-full p-2 border rounded-md">
-                  <option>Choose your state</option>
                   <option value="">Choose your state</option>
                   <option value="Alabama">Alabama</option>
                   <option value="Alaska">Alaska</option>

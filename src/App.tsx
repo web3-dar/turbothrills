@@ -4,11 +4,12 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import CarListing from "./pages/CarListing";
 import Footer from "./components/footer";
-
 import Home from "./pages/HomePage/Hero";
 import FeaturedCars from "./pages/FeaturedCars/FeaturedCars";
 import CarDetails from "./pages/FeaturedCars/CarDetails";
 import Sell from "../src/pages/HomePage/Sell";
+import ProductList from "./pages/Products/products";
+import ProductDetails from "./pages/Products/ProductDetails";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
             <Route path="/featured-cars" element={<FeaturedCars />} />
             <Route path="/car/:id" element={<CarDetails />} />
             <Route path="/sell" element={<Sell />} />
+            <Route path="/product-list" element={<ProductList />} />
+            <Route path="/products/:id" element={<ProductDetails />} />
           </Routes>
         </main>
 

@@ -7,6 +7,8 @@ import YourGarage from './Garage';
 import Reviews from './Review';
 import Info from './Information';
 
+import RandomProducts from '../Products/RandomProducts';
+
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
@@ -21,6 +23,11 @@ const Home: React.FC = () => {
 <Link to="/featured-cars" className="mt-5 inline-block bg-[#c30101] text-white px-5 py-4 rounded flex justify-center text-xl ">View Featured Cars Here</Link>
 
 <Reviews/>
+
+<div className='m-6 p-4 py-2 text-xl  text-center  flex  justify-center text-gray-500 shadow-md rounded hover:bg-gray-200 transition duration-300'>Check Out Top Sellers</div>
+<RandomProducts/>
+
+<Link to="/featured-cars" className="mt-5 inline-block bg-[#c30101] text-white px-5 py-4 rounded flex justify-center text-xl ">View Featured Cars Here</Link>
 
 <Info/>
     

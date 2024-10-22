@@ -22,7 +22,7 @@ const Info = () => {
           <div className="mr-2">
             <FiMail />
           </div>{" "}
-          contact@brandaffair.ro
+          Turbothrills.vercel@gmail.com
         </p>
 
         {/* Location Section */}
@@ -30,7 +30,7 @@ const Info = () => {
           <div className="mr-2">
             <FiMapPin />
           </div>{" "}
-          Amman St. no. 35, 4th floor, ap 10, Bucharest
+          West Roxbury Massachusetts 02132
         </p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { FaShoppingCart, FaHeart } from "react-icons/fa"; // Importing the shopping cart icon
+import {  FaHeart } from "react-icons/fa"; // Importing the shopping cart icon
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false); // Explicitly set the type for isMenuOpen

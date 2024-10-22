@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa"; // Importing the shopping cart icon
+import { FaShoppingCart, FaHeart } from "react-icons/fa"; // Importing the shopping cart icon
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false); // Explicitly set the type for isMenuOpen
@@ -20,16 +20,18 @@ const Header: React.FC = () => {
 
         {/* Cart Icon for Mobile */}
         <div className="flex items-center lg:hidden">
-          <button className="text-black mr-4 focus:outline-none">
-            <div className="w-6 h-6 text-red-500">
-              {" "}
-              <FaShoppingCart />
-            </div>
-          </button>
-
+          
+            <button className="text-black mr-4 focus:outline-none">
+             
+              <div className="w-6 h-6 text-xl text-red-500 hover:text-black">
+                {" "}
+                <FaHeart />
+              </div>
+            </button>
+         
           {/* Hamburger Menu Button for Mobile */}
           <button
-            className="text-black focus:outline-none"
+            className="text-red-500 hover:text-black focus:outline-none"
             onClick={toggleMenu}
           >
             {isMenuOpen ? (
@@ -83,7 +85,7 @@ const Header: React.FC = () => {
                 className="hover:text-gray-400"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Car Listings
+                Home
               </Link>
             </li>
             <li className="py-2 lg:py-0 font-bold  border-b border-gray-200 lg:border-none hover:text-gray-600 pl-4 lg:pl-0">

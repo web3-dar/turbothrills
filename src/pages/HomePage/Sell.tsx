@@ -80,7 +80,7 @@ const Sell: React.FC = () => {
 
         <ul className="list-none ml-0 space-y-4">
           <li className="flex items-start">
-           <div className="text-green-500 mr-2 mt-1"> <FaCheck  />
+           <div className="text-[#c30101] mr-2 mt-1 m-4"> <FaCheck  />
             </div>
             <span>
               <strong>List your car for free.</strong> There are no costs or hidden fees to selling your car yourself on
@@ -88,7 +88,7 @@ const Sell: React.FC = () => {
             </span>
           </li>
           <li className="flex items-start">
-          <div className="text-green-500 mr-2 mt-1"> <FaCheck  />
+          <div className="text-[#c30101] mr-2 mt-1 m-4"> <FaCheck  />
           </div>
             <span>
               <strong>Set your own price.</strong> Use TT’s insights into your vehicle’s market value to set your
@@ -96,11 +96,11 @@ const Sell: React.FC = () => {
             </span>
           </li>
           <li className="flex items-start">
-          <div className="text-green-500 mr-2 mt-1"> <FaCheck  />
+          <div className="text-[#c30101] mr-2 mt-1 m-4 "> <FaCheck  />
           </div>
             <span>
               <strong>
-                <span className="text-[#c30101]">NEW</span> Transact with Laramel.
+                <span className="text-[#c30101] m-4">NEW</span> Transact with Laramel.
               </strong>{" "}
               We’ve partnered with Laramel to level-up your TT listing. Give verified buyers a handy way to add
               financing, vehicle protection, insurance, and delivery. Laramel will handle the paperwork, DMV, and get
@@ -117,13 +117,13 @@ const Sell: React.FC = () => {
           </li>
         </ul>
 
-        <p className="mt-6">
+        <p className="mt-6 m-4">
           Already have a listing?{" "}
           <a href="#view-garage" className="underline text-[#c30101] hover:text-gray-800">
             View Your Garage
           </a>
         </p>
-        <p className="mt-2">
+        <p className="mt-2 m-4">
           Want expert advice on how to sell your used car?{" "}
           <a href="#check-it-out" className="underline text-[#c30101] hover:text-gray-800">
             Check it out.

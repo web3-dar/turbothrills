@@ -1,4 +1,3 @@
-// src/components/FeaturedCars.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa'; 
@@ -197,12 +196,12 @@ const cars: Car[] = [
 const truncateDescription = (description: string): string => {
   const words = description.split(' ');
 
-  // Return the first 100 words, joined into a string
-  if (words.length > 50) {
-    return words.slice(0, 50).join(' ') + '...'; // Add ellipsis to indicate more content
+  // Return the first 30 words, joined into a string
+  if (words.length > 30) {
+    return words.slice(0, 30).join(' ') + '...'; // Add ellipsis to indicate more content
   }
 
-  return description; // Return the full description if it's under 100 words
+  return description; // Return the full description if it's under 30 words
 };
 
 const FeaturedCars: React.FC = () => {
@@ -218,52 +217,46 @@ const FeaturedCars: React.FC = () => {
 
   return (
     <div className="container mx-auto py-10">
-
-
-
-
-      <h2 className="text-3xl font-bold mb-5 text-center">Featured Cars</h2>
-      <div className="mb-5 m-auto flex justify-center space-x-4">
-        <button onClick={() => filterCars('All')} className="mr-2 bg-[#6f0000] px-4 py-2 border-black  rounded  text-white  hover:bg-[#c30101] ">All</button>
-        <button onClick={() => filterCars('SUV')} className="mr-2 bg-[#6f0000] px-4 py-2 border-black  rounded text-white  hover:bg-[#c30101] ">SUV</button>
-        <button onClick={() => filterCars('Sedan')} className="mr-2 bg-[#6f0000] px-4 py-2 border-black  rounded text-white  hover:bg-[#c30101] ">Sedan</button>
-        <button onClick={() => filterCars('Truck')} className="bg-[#6f0000] px-4 py-2 border-black  rounded text-white  hover:bg-[#c30101] ">Truck</button>
+      <h2 className="text-3xl font-bold mb-5 text-center text-red-400 shadow-md p-4">Featured Cars</h2>
+      <div className="mb-5 m-auto flex justify-center space-x-4 shadow-md p-4">
+        <button onClick={() => filterCars('All')} className="mr-2 bg-[#6f0000] px-4 py-2 border-black rounded text-white hover:bg-[#c30101]">All</button>
+        <button onClick={() => filterCars('SUV')} className="mr-2 bg-[#6f0000] px-4 py-2 border-black rounded text-white hover:bg-[#c30101]">SUV</button>
+        <button onClick={() => filterCars('Sedan')} className="mr-2 bg-[#6f0000] px-4 py-2 border-black rounded text-white hover:bg-[#c30101]">Sedan</button>
+        <button onClick={() => filterCars('Truck')} className="bg-[#6f0000] px-4 py-2 border-black rounded text-white hover:bg-[#c30101]">Truck</button>
       </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-  {filteredCars.map(car => (
-    <div key={car.id} className="border rounded-lg shadow-lg overflow-hidden flex flex-col">
-      <img
-        src={car.image}
-        alt={car.title}
-        className="w-full h-64 object-contain" // Fixed height and width for consistency
-      />
-      <div className="p-7 flex flex-col flex-grow ">
-        <h3 className="text-xl font-semibold mb-2 text-center">{car.title}</h3>
-        <p className="text-gray-700 flex-grow p-5">{truncateDescription(car.description)}</p>
-        <p className="font-bold text-lg mb-2 border border-gray-200 shadow-md p-4 rounded text-center m-4">{car.price}</p>
-        
-        {/* Button Container */}
-        <div className="flex justify-between m-4">
-          <Link to={`/car/${car.id}`} className="bg-[#6f0000] text-white rounded px-4 py-2 hover:bg-[#900000] transition duration-300 ">
-            View More
-          </Link>
-          <Link to={`/contact-us`} className="bg-[#6f0000] text-white rounded px-4 py-2 hover:bg-[#900000] transition duration-300 ">
-            Contact Us
-          </Link>
-        </div>
+        {filteredCars.map(car => (
+          <div key={car.id} className="border rounded-lg shadow-lg overflow-hidden flex flex-col">
+            <img
+              src={car.image}
+              alt={car.title}
+              className="w-full h-64 object-contain" // Fixed height and width for consistency
+            />
+            <div className="p-7 flex flex-col flex-grow">
+              <h3 className="text-xl font-semibold mb-2 text-center text-red-400">{car.title}</h3>
+              <p className="text-gray-700 flex-grow p-5">{truncateDescription(car.description)}</p>
+              <p className="font-bold text-lg mb-2 border border-gray-200 shadow-md p-4 rounded text-center m-4">{car.price}</p>
+
+              {/* Button Container */}
+              <div className="flex justify-between m-4">
+                <Link to={`/car/${car.id}`} className="bg-[#6f0000] text-white rounded px-4 py-2 hover:bg-[#900000] transition duration-300">
+                  View More
+                </Link>
+                <Link to={`/contact-us`} className="bg-[#6f0000] text-white rounded px-4 py-2 hover:bg-[#900000] transition duration-300">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
-  ))}
-</div>
-
-
 
       {/* Sticky Home Icon */}
       <Link to="/" className="flex items-center justify-center p-4 bg-[#c30101] text-white fixed bottom-0 left-0 right-0 shadow-lg">
-         <div className="text-3xl mr-2" > 
-         <FaHome />
-          </div> {/* Increased icon size */}
-    
+        <div className="text-3xl mr-2">
+          <FaHome />
+        </div>
       </Link>
     </div>
   );

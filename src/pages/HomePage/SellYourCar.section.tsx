@@ -7,7 +7,7 @@ const SellYourCarSection: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between py-10 px-5 md:px-20 bg-white">
       <div className="text-center md:text-left md:w-1/2">
-        <h2 className="text-2xl font-semibold mb-2 shadow-md p-5 px-10 text-red-400 text-center mb-4 hover:bg-gray-100">Sell your car your way</h2>
+        <h2 className="text-3xl font-semibold mb-2 p-5 px-10 text-red-400 text-center mb-4">Sell your car your way</h2>
         <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
           {/* Card 1 */}
           <div className="flex items-center space-x-4">

@@ -13,7 +13,7 @@ const YourGarage = () => {
       <div className="flex justify-between flex-col md:flex-row  items-center  px-10 py-10">
         {/* Left section */}
         <div className="max-w-lg m-7">
-          <h1 className="text-3xl font-semibold mb-2 shadow-md p-5 px-10 text-red-400 text-center mb-4 hover:bg-gray-100">Your Garage</h1>
+          <h1 className="text-3xl font-semibold mb-2 p-5 px-10 text-red-400 text-center mb-4 ">Your Garage</h1>
           <p className="text-xl font-semibold mb-2">Add your car. Track its value.</p>
           <p className="text-lg mb-4">
             Add your car to Your Garage to track its market value and cash in when the time is right to sell.{" "}

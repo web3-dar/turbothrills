@@ -74,8 +74,8 @@ const Reviews = () => {
               alt={allTestimonials[currentIndex].name}
               className="w-20 h-20 rounded-full mx-auto mb-2"
             />
-            <h3 className="font-semibold">{allTestimonials[currentIndex].name}</h3>
-            <p className="text-gray-600">{allTestimonials[currentIndex].comment}</p>
+            <h3 className="font-semibold p-3">{allTestimonials[currentIndex].name}</h3>
+            <p className="text-gray-600 p-3">{allTestimonials[currentIndex].comment}</p>
           </div>
           <button onClick={handleNext} className="text-2xl text-[#c30101]" aria-label="Next Testimonial">&gt;</button>
         </div>

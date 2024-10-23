@@ -80,6 +80,55 @@ import gle7 from "./productImg/2024-GLE-SUV-MLP_7.png"
 import gle8 from "./productImg/2024-GLE-SUV-MLP_8.png"
 
 
+//2019_Honda_Civic_Lx
+
+import civic1 from "./productImg/2019_Honda_Civic_Lx_1.jpg"
+import civic2 from "./productImg/2019_Honda_Civic_Lx_2.jpg"
+import civic3 from "./productImg/2019_Honda_Civic_Lx_3.jpg"
+import civic4 from "./productImg/2019_Honda_Civic_Lx_4.jpg"
+import civic5 from "./productImg/2019_Honda_Civic_Lx_5.jpg"
+import civic6 from "./productImg/2019_Honda_Civic_Lx_6.jpg"
+import civic7 from "./productImg/2019_Honda_Civic_Lx_7.jpg"
+import civic8 from "./productImg/2019_Honda_Civic_Lx_8.jpg"
+
+
+
+
+//AUDI
+
+import audi1 from "./productImg/2018_Audi_A6_1.jpg"
+import audi2 from "./productImg/2018_Audi_A6_2.jpg"
+import audi3 from "./productImg/2018_Audi_A6_3.jpg"
+import audi4 from "./productImg/2018_Audi_A6_4.jpg"
+import audi5 from "./productImg/2018_Audi_A6_5.jpg"
+import audi6 from "./productImg/2018_Audi_A6_6.jpg"
+import audi7 from "./productImg/2018_Audi_A6_7.jpg"
+import audi8 from "./productImg/2018_Audi_A6_8.jpg"
+import audi9 from "./productImg/2018_Audi_A6_9.jpg"
+
+
+// 2019 Honda Accord Sports 
+
+import Honda291 from "./productImg/Honda_2019_1.jpg"
+import Honda292 from "./productImg/Honda_2019_2.jpg"
+import Honda293 from "./productImg/Honda_2019_3.jpg"
+import Honda294 from "./productImg/Honda_2019_4.jpg"
+import Honda295 from "./productImg/Honda_2019_5.jpg"
+import Honda296 from "./productImg/Honda_2019_6.jpg"
+
+//tESLA mODELy
+
+import tesla1 from "./productImg/Tesla_ModelY_1.jpg"
+import tesla2 from "./productImg/Tesla_ModelY_2.jpg"
+import tesla3 from "./productImg/Tesla_ModelY_3.jpg"
+import tesla4 from "./productImg/Tesla_ModelY_4.jpg"
+import tesla5 from "./productImg/Tesla_ModelY_5.jpg"
+import tesla6 from "./productImg/Tesla_ModelY_6.jpg"
+import tesla7 from "./productImg/Tesla_ModelY_7.jpg"
+import tesla8 from "./productImg/Tesla_ModelY_8.jpg"
+import tesla9 from "./productImg/Tesla_ModelY_9.jpg"
+import tesla10 from "./productImg/Tesla_ModelY_10.jpg"
+
 
 
 
@@ -206,49 +255,78 @@ export interface Product {
        gle8
       ]
     },
-    // {
-    //     id: "6",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "7",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "8",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "9",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
+    {
+        id: "6",
+      name: "2019 Honda Civic Lx",
+      price: 17000,
+      description: "The 2019 Honda Civic LX is a compact sedan known for its reliable 2.0L engine, excellent fuel efficiency (up to 38 MPG highway), spacious interior, standard Honda Sensing safety features",
+      images: [
+      civic1,
+      civic2,
+      civic3,
+      civic4,
+      civic5,
+      civic6,
+      civic7,
+      civic8,
+      
+      ]
+    }
+,
+    {
+        id: "7",
+      name: "2019 Audi A5",
+      price: 28000,
+      description: "The 2019 Audi A5 is a luxury vehicle known for its elegant design and strong performance. It comes equipped with a 248-horsepower, 2.0L turbocharged 4-cylinder engine and standard quattro all-wheel drive, providing smooth handling and swift acceleration (0-60 mph in 5.6 seconds). The interior is luxurious, featuring Audi’s Virtual Cockpit and MMI navigation, with comfortable seating, though the backseat is a bit cramped",
+      images: [
+        audi1,
+        audi2,
+        audi3,
+        audi4,
+        audi5,
+        audi6,
+        audi7,
+        audi8,
+        audi9
+       
+      ]
+    }
+,
+    {
+        id: "8",
+      name: "2019 Honda Accord Sport",
+      price: 22000,
+      description: "The 2019 Honda Accord Sport is a midsize sedan that balances sporty performance with practicality. It comes with a 1.5L turbocharged 4-cylinder engine producing 192 horsepower, paired with either a CVT or a 6-speed manual transmission. It offers a responsive driving experience and solid fuel efficiency, achieving around 29 MPG city / 35 MPG highway. Standard features include a 19-inch alloy wheels, leather-wrapped steering wheel, 8-inch touchscreen, Apple CarPlay, and Android Auto",
+      images: [
+       Honda291,
+       Honda292,
+       Honda293,
+       Honda294,
+       Honda295,
+       Honda296,
+      ]
+    }
+,
+    {
+        id: "9",
+      name: "Tesla Model Y with Autopilot",
+      price: 50000,
+      description: "The Tesla Model Y with Autopilot offers advanced driver-assistance features that enhance safety and convenience. Standard Autopilot includes features like Traffic-Aware Cruise Control, which adjusts the car's speed to maintain a set distance from other vehicles, and automatic steering to keep the vehicle centered in its lane. It also offers emergency braking, collision warnings, and lane departure prevention.",
+      images: [
+        tesla1,
+        tesla2,
+        tesla3,
+        tesla4,
+        tesla5,
+        tesla6,
+        tesla7,
+        tesla8,
+        tesla9,
+        tesla10,
+        
+       
+      ]
+    }
 // ,
     // {
     //     id: "10",

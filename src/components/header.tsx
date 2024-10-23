@@ -114,7 +114,18 @@ const Header: React.FC = () => {
               >
                 Sell Your Car
               </Link>
+              </li>
+              <li className="py-2 lg:py-0 font-bold hover:text-gray-600 pl-4 lg:pl-0">
+              <Link
+                to="/product-list"
+                className="hover:text-gray-400"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Available Cars 
+              </Link>
             </li>
+             
+              
           </ul>
         </nav>
       </div>

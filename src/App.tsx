@@ -10,10 +10,15 @@ import CarDetails from "./pages/FeaturedCars/CarDetails";
 import Sell from "../src/pages/HomePage/Sell";
 import ProductList from "./pages/Products/products";
 import ProductDetails from "./pages/Products/ProductDetails";
+import ScrollToTop from "./pages/ScrollToTop";
+import RentalPage from "./pages/RentalPage";
+import Purchase from "./pages/Purchase";
+
 
 function App() {
   return (
     <Router>
+     <ScrollToTop/> 
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
@@ -27,6 +32,8 @@ function App() {
             <Route path="/sell" element={<Sell />} />
             <Route path="/product-list" element={<ProductList />} />
             <Route path="/products/:id" element={<ProductDetails />} />
+            <Route path="/rent/:id" element={<RentalPage />} />
+            <Route path="/purchase/:id" element={<Purchase />} />
           </Routes>
         </main>
 

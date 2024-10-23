@@ -148,7 +148,6 @@ export interface Product {
         // add more images here as needed...
       ]
     }
-
     ,
     {
         id: "3",
@@ -189,9 +188,7 @@ export interface Product {
         cr11,
         cr12
       ]
-    }
-
-    
+    }   
 ,
    {
         id: "5",
@@ -219,7 +216,7 @@ export interface Product {
     //    img
     //   ]
     // }
-,
+// ,
     // {
     //     id: "7",
     //   name: "",
@@ -230,7 +227,7 @@ export interface Product {
     //    img
     //   ]
     // }
-,
+// ,
     // {
     //     id: "8",
     //   name: "",
@@ -241,7 +238,7 @@ export interface Product {
     //    img
     //   ]
     // }
-,
+// ,
     // {
     //     id: "9",
     //   name: "",
@@ -252,7 +249,7 @@ export interface Product {
     //    img
     //   ]
     // }
-,
+// ,
     // {
     //     id: "10",
     //   name: "",
@@ -263,7 +260,7 @@ export interface Product {
     //    img
     //   ]
     // }
-,
+// ,
     // {
     //     id: "",
     //   name: "",
@@ -274,7 +271,7 @@ export interface Product {
     //    img
     //   ]
     // }
-,
+// ,
     // {
     //     id: "",
     //   name: "",

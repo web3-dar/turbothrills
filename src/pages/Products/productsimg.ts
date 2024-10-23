@@ -68,6 +68,17 @@ import  cr11 from "./productImg/Honda_CR-V_2018_11.jpg"
 import  cr12 from "./productImg/Honda_CR-V_2018_12.jpg"
 
 
+//2024 Mercedes-Benz GLE-Class
+
+import gle1 from "./productImg/2024-GLE-SUV-MLP_1.png"
+import gle2 from "./productImg/2024-GLE-SUV-MLP_2.png"
+import gle3 from "./productImg/2024-GLE-SUV-MLP_3.png"
+import gle4 from "./productImg/2024-GLE-SUV-MLP_4.png"
+import gle5 from "./productImg/2024-GLE-SUV-MLP_5.png"
+import gle6 from "./productImg/2024-GLE-SUV-MLP_6.png"
+import gle7 from "./productImg/2024-GLE-SUV-MLP_7.png"
+import gle8 from "./productImg/2024-GLE-SUV-MLP_8.png"
+
 
 
 
@@ -181,6 +192,89 @@ export interface Product {
     }
 
     
+,
+{
+  id: "5",
+name: "2024 Mercedes-Benz GLE SUV",
+price: 70650,
+description: "The 2024 Mercedes-Benz GLE SUV is a luxury midsize SUV that offers a blend of advanced technology, performance, and premium features. It comes in several powertrain options, including mild hybrids and a plug-in hybrid model",
+images: [
+ gle1,
+ gle2,
+ gle3,
+ gle4,
+ gle5,
+ gle6,
+ gle7,
+ gle8
+]
+}
+,
+    // {
+    //     id: "6",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+,
+    // {
+    //     id: "7",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+,
+    // {
+    //     id: "8",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+,
+    // {
+    //     id: "9",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+,
+    // {
+    //     id: "10",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
 ,
     // {
     //     id: "",

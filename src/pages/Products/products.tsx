@@ -5,14 +5,14 @@ import { products, Product } from './productsimg';
 const ProductList: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      {products.map((product: Product, index: number) => (
-        <ProductCard key={index} product={product} productId={index} />
+      {products.map((product: Product) => (
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );
 };
 
-const ProductCard: React.FC<{ product: Product; productId: number }> = ({ product, productId }) => {
+const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleNextImage = () => {
@@ -27,8 +27,7 @@ const ProductCard: React.FC<{ product: Product; productId: number }> = ({ produc
     );
   };
 
-  // Slice the description to 30 words
-  const truncatedDescription = product.description.split(" ").slice(0, 30).join(" ") + "...";
+  const truncatedDescription = product.description.split(' ').slice(0, 30).join(' ') + '...';
 
   return (
     <div className="p-4 border rounded-lg shadow-md">
@@ -54,13 +53,15 @@ const ProductCard: React.FC<{ product: Product; productId: number }> = ({ produc
         </button>
       </div>
 
-      <p className="text-xl font-bold text-[#6f0000] border border-gray-300 rounded-md p-4 bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-center m-4"> PRICE : {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(product.price)}</p>
+      <p className="text-xl font-bold text-[#6f0000] border border-gray-300 rounded-md p-4 bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-center m-4"> 
+        PRICE : {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(product.price)}
+      </p>
       <p className="text-gray-700 m-4 p-4">{truncatedDescription}</p>
 
-      
-      {/* Link to the Product Details page */}
-      <Link to={`/products/${productId}`}>
-        <button className="m-6 p-4 py-2 bg-[#c30101] flex  justify-center text-white rounded hover:bg-red-500 transition duration-300">View Details</button>
+      <Link to={`/products/${product.id}`}>
+        <button className="m-6 p-4 py-2 bg-[#c30101] flex justify-center text-white rounded hover:bg-red-500 transition duration-300">
+          View Details
+        </button>
       </Link>
     </div>
   );

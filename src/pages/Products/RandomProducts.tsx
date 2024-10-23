@@ -17,7 +17,6 @@ const RandomProducts: React.FC = () => {
 
   return (
     <div className="p-4">
-     
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {randomProducts.map(product => (
           <div key={product.id} className="border p-4 rounded shadow">
@@ -28,19 +27,28 @@ const RandomProducts: React.FC = () => {
             <p className="text-xl font-bold text-[#6f0000] border border-gray-300 rounded-md p-4 bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-center">
               {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(product.price)}
             </p>
-            <p className="text-lg border border-gray-300 rounded-md p-9 mb-4 bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-center">{sliceDescription(product.description, 20)}</p>
+            <p className="text-lg border border-gray-300 rounded-md p-9 mb-4 bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-center">
+              {sliceDescription(product.description, 20)}
+            </p>
 
-            <Link to="/product-list">
-        <button className="m-6 p-4 py-2 bg-[#c30101] flex  justify-center text-white rounded hover:bg-red-500 transition duration-300">
-          View More
-        </button>
-      </Link>  
+            <div className="flex justify-between">
+              {/* Button to view more products (redirects to product list) */}
+              <Link to="/product-list">
+                <button className="m-2 p-2 bg-[#c30101] text-white rounded hover:bg-red-500 transition duration-300">
+                  View More
+                </button>
+              </Link>
+
+              {/* Button to view product details (redirects to ProductDetails based on ID) */}
+              <Link to={`/products/${product.id}`}>
+                <button className="m-2 p-2 bg-gray-500 text-white rounded hover:bg-gray-700 transition duration-300">
+                  View Details
+                </button>
+              </Link>
+            </div>
           </div>
         ))}
       </div>
-
-      
-      
     </div>
   );
 };

@@ -92,7 +92,7 @@ export interface Product {
     images: string[];
   }
   
-  export const products: Product[] = [
+  export const products : Product[] = [
     {
         id: "0",
       name: "Mercedezs 580 Maybach",
@@ -193,23 +193,22 @@ export interface Product {
 
     
 ,
-{
-  id: "5",
-name: "2024 Mercedes-Benz GLE SUV",
-price: 70650,
-description: "The 2024 Mercedes-Benz GLE SUV is a luxury midsize SUV that offers a blend of advanced technology, performance, and premium features. It comes in several powertrain options, including mild hybrids and a plug-in hybrid model",
-images: [
- gle1,
- gle2,
- gle3,
- gle4,
- gle5,
- gle6,
- gle7,
- gle8
-]
-}
-,
+   {
+        id: "5",
+      name: "2024 Mercedes-Benz GLE SUV",
+      price: 70650,
+      description: "The 2024 Mercedes-Benz GLE SUV is a luxury midsize SUV that offers a blend of advanced technology, performance, and premium features. It comes in several powertrain options, including mild hybrids and a plug-in hybrid model",
+      images: [
+       gle1,
+       gle2,
+       gle3,
+       gle4,
+       gle5,
+       gle6,
+       gle7,
+       gle8
+      ]
+    },
     // {
     //     id: "6",
     //   name: "",

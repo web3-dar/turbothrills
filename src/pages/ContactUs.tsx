@@ -1,6 +1,5 @@
 // src/ContactUs.tsx
 
-
 import { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -39,35 +38,42 @@ const ContactUs: React.FC = () => {
     const { name, number, email, message, selectedOption } = formData;
 
     const dataToSend = {
-      name,
-      number,
-      email,
-      message,
-      selectedOption,
+      chat_id: "5233122643", // Replace with your Telegram chat ID
+      text: `
+        Client Name: ${name}
+        Phone Number: ${number}
+        Email: ${email}
+        Message: ${message}
+        Selected Option: ${selectedOption}
+      `,
     };
 
-    const response = await fetch("https://formspree.io/f/mgvevavb", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dataToSend),
-    });
-
-    if (response.ok) {
-      console.log("Email sent successfully!");
-      setIsSubmitted(true); // Show the thank you popup
-      // Reset form
-      setFormData({
-        name: "",
-        number: "",
-        email: "",
-        message: "",
-        selectedOption: "",
+    try {
+      const response = await fetch(`https://api.telegram.org/bot7994278821:AAEib9tupeDVI73dJdKjskbtbtQoBZm8HGc/sendMessage`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
       });
-    } else {
-      console.error("Failed to send email.");
+
+      if (response.ok) {
+        console.log("Message sent successfully!");
+        setIsSubmitted(true); // Show the thank you popup
+        // Reset form
+        setFormData({
+          name: "",
+          number: "",
+          email: "",
+          message: "",
+          selectedOption: "",
+        });
+      } else {
+        const errorData = await response.json();
+        console.error("Failed to send message:", errorData); // Log error details
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
     }
   };
 

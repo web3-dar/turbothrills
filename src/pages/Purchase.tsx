@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { products } from "../pages/Products/productsimg";
+import man from './man.jpeg'
 
 const Purchase: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -18,6 +19,10 @@ const Purchase: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
+
+  // Telegram Bot Configuration
+  const telegramBotToken = "7994278821:AAEib9tupeDVI73dJdKjskbtbtQoBZm8HGc"; // Replace with your actual bot token
+  const chatId = "5233122643"; // Replace with your chat ID
 
   // Validation functions
   const validateEmail = (email: string): boolean => {
@@ -53,6 +58,45 @@ const Purchase: React.FC = () => {
     setExpiryDate(formattedValue);
   };
 
+//////////////////COPYING
+
+  const [text ] = useState("bc1qlm9scujdd37ftmxmv07z77d47tpxf845kux3cj");
+
+  const copyToClipboard = async () => {
+    try {
+      // Select the text in the input field
+      const inputField = document.getElementById("copyInput") as HTMLInputElement;
+      inputField.select();
+      inputField.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the selected text
+      await navigator.clipboard.writeText(inputField.value);
+      console.log("Text copied to clipboard!"); // Feedback for the user
+    } catch (err) {
+      console.error("Failed to copy text: ", err);
+      console.log("Failed to copy text.");
+    }
+  };
+  
+ 
+
+  const sendMessageToTelegram = async (message: string) => {
+    try {
+      await fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: message,
+        }),
+      });
+    } catch (error) {
+      console.error("Error sending message to Telegram:", error);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrors({}); // Reset errors
@@ -65,7 +109,7 @@ const Purchase: React.FC = () => {
     }
     if (paymentMethod === "card") {
       if (!validateCardNumber(cardNumber)) {
-        setErrors((prev) => ({ ...prev, cardNumber: "Invalid card number" }));
+        setErrors((prev) => ({ ...prev, cardNumber: "Invalid card number " }));
         valid = false;
       }
       if (!validateExpiryDate(expiryDate)) {
@@ -95,32 +139,29 @@ const Purchase: React.FC = () => {
       productPrice: product?.price,
     };
 
-    // Submit the form data to Formspree
-    try {
-      await fetch("https://formspree.io/f/YOUR_FORMSPREE_ID", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+    // Create the message to send to Telegram
+    const message = `
+      New Purchase Order:
+      Name: ${formData.name}
+      Email: ${formData.email}
+      Car Name: ${formData.productName}
+      Car Price: ${formData.productPrice}
+      Payment Method: ${formData.paymentMethod}
+      Address: ${formData.address}
+    `;
 
-      // Successfully submitted
-      setSubmitted(true);
-    } catch (error) {
-      console.error("Error submitting the form:", error);
-    } finally {
-      setLoading(false);
-      setTimeout(() => navigate("/"), 3000); // Redirect after 3 seconds
-    }
+    // Send message to Telegram
+    await sendMessageToTelegram(message);
+
+    // Successfully submitted
+    setSubmitted(true);
+    setLoading(false);
+    setTimeout(() => navigate("/"), 3000); // Redirect after 3 seconds
   };
 
   if (!product) {
     return <p className="text-2xl font-bold text-center mb-4 m-6 p-4 py-2 text-2xl text-center flex justify-center text-gray-500 shadow-md rounded hover:bg-gray-200">Product not found!</p>; // Handle case if product doesn't exist
   }
-
-  // Calculate rental price (10% of product price)
-  
 
   const handleNextImage = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -137,16 +178,16 @@ const Purchase: React.FC = () => {
   return (
     <div className="p-4 max-w-lg mx-auto">
       <h1 className="text-2xl font-bold text-center mb-4 m-6 p-4 py-2 text-2xl text-center flex justify-center text-gray-500 shadow-md rounded hover:bg-gray-200">{product.name}</h1>
-      <p className="text-xl font-bold text-[#6f0000] border border-gray-300 rounded-md p-4 bg-gray-100   text-center m-4">
+      <p className="text-xl font-bold text-[#6f0000] border border-gray-300 rounded-md p-4 bg-gray-100 text-center m-4">
         Price:{" "}
         {new Intl.NumberFormat("en-US", {
           style: "currency",
           currency: "USD",
         }).format(product.price)}
       </p>
-      <p className="text-xl font-semibold text-green-600 mb-4 text-xl font-bold text-[#6f0000] border border-gray-300 rounded-md p-4 bg-gray-100   text-center m-4">
-  Rent Price: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(Number(product.price) * 0.1)}
-</p>
+      <p className="text-xl font-semibold text-green-600 mb-4 text-xl font-bold text-[#6f0000] border border-gray-300 rounded-md p-4 bg-gray-100 text-center m-4">
+        Rent Price: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(Number(product.price) * 0.1)}
+      </p>
 
       {/* Image Slider */}
       <div className="relative mb-4">
@@ -170,10 +211,26 @@ const Purchase: React.FC = () => {
       </div>
 
       {submitted ? (
-        <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
-          <h2 className="font-bold">Thank you for your purchase!</h2>
-          <p>Your order is being processed..</p>
+
+<div className="flex items-center justify-center min-h-screen">
+      <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm text-center">
+        <div className="flex justify-center mb-4">
+          <img
+            src={man} // Replace with your smiley avatar URL
+            alt="Smiley Avatar"
+            className="rounded-full border-2 border-green-500"
+          />
         </div>
+        <h2 className="text-xl font-semibold text-gray-700">
+          Order Processed!
+        </h2>
+        <p className="text-gray-500 mt-2">
+          We will get back to you shortly.
+        </p>
+      </div>
+    </div>
+
+
       ) : (
         <form
           onSubmit={handleSubmit}
@@ -238,14 +295,46 @@ const Purchase: React.FC = () => {
             )}
             {paymentMethod === "bitcoin" && (
               <div>
-                <h4 className="font-semibold">Bitcoin Payment Details:</h4>
-                <span>Bitcoin Address: 1A2B3C4D5E6F7G8H9I0J</span>
+                <span className="text-center font-semibold">Bitcoin Address:</span>
+                <div className="flex flex-col items-center p-4">
+                <div className="flex flex-col items-center p-4">
+      <input
+        type="text"
+        id="copyInput"
+        value={text}
+        readOnly // Optional: makes the field read-only to avoid user edits
+        className="p-2 border border-gray-300 rounded mb-2 w-80"
+      />
+      <button
+        onClick={copyToClipboard}
+        className="bg-gray-400 text-white p-2 rounded"
+      >
+        Copy to Clipboard
+      </button>
+    </div>
+      
+    </div>
               </div>
             )}
             {paymentMethod === "cashapp" && (
               <div>
                 <h4 className="font-semibold">CashApp Payment Details:</h4>
-                <span>CashApp ID: $YourCashAppID</span>
+                <div className="flex flex-col items-center p-4">
+      <input
+        type="text"
+        id="copyInput"
+        value={'$cashtag'}
+        readOnly // Optional: makes the field read-only to avoid user edits
+        className="p-2 border border-gray-300 rounded mb-2 w-80"
+      />
+      <button
+        onClick={copyToClipboard}
+        className="bg-gray-400 text-white p-2 rounded"
+      >
+        Copy to Clipboard
+      </button>
+    </div>
+      
               </div>
             )}
           </div>
@@ -309,7 +398,7 @@ const Purchase: React.FC = () => {
           {paymentMethod !== "card" && (
             <div className="mb-4">
               <label htmlFor="address" className="block mb-1">
-                Address for Paperwork:
+                Home address:
               </label>
               <textarea
                 id="address"
@@ -317,7 +406,7 @@ const Purchase: React.FC = () => {
                 onChange={(e) => setAddress(e.target.value)}
                 required
                 className="p-2 border border-gray-300 rounded w-full"
-                rows={3}
+                rows={1}
               />
             </div>
           )}

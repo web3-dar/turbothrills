@@ -131,6 +131,146 @@ import tesla10 from "./productImg/Tesla_ModelY_10.jpg"
 
 
 
+//2015 Porsche Macan S
+
+import porsche1 from "./productImg/2015_Porsche_Macan_1.jpg"
+    import porsche2 from "./productImg/2015_Porsche_Macan_2.jpg"
+   import  porsche3 from "./productImg/2015_Porsche_Macan_3.jpg"
+   import  porsche4 from "./productImg/2015_Porsche_Macan_4.jpg"
+   import  porsche5 from "./productImg/2015_Porsche_Macan_5.jpg"
+
+
+
+//2017 Honda 
+
+import honda1 from "./productImg/2017_Honda_Accord_S_1.jpg"
+import honda2 from "./productImg/2017_Honda_Accord_S_2.jpg"
+import honda3 from "./productImg/2017_Honda_Accord_S_3.jpg"
+import honda4 from "./productImg/2017_Honda_Accord_S_4.jpg"
+import honda5 from "./productImg/2017_Honda_Accord_S_5.jpg"
+import honda6 from "./productImg/2017_Honda_Accord_S_6.jpg"
+import honda7 from "./productImg/2017_Honda_Accord_S_7.jpg"
+import honda8 from "./productImg/2017_Honda_Accord_S_8.jpg"
+import honda9 from "./productImg/2017_Honda_Accord_S_9.jpg"
+import honda10 from "./productImg/2017_Honda_Accord_S_10.jpg"
+import honda11 from "./productImg/2017_Honda_Accord_S_11.jpg"
+import honda12 from "./productImg/2017_Honda_Accord_S_12.jpg"
+import honda13 from "./productImg/2017_Honda_Accord_S_13.jpg"
+import honda14 from "./productImg/2017_Honda_Accord_S_14.jpg"
+
+
+
+//The 2016 Hyundai Tucson Sport SUV 4D
+
+import HyundaiTuc1 from './productImg/hyundai26_1.jpg'
+import HyundaiTuc2 from './productImg/hyundai26_2.jpg'
+import HyundaiTuc3 from './productImg/hyundai26_3.jpg'
+    import HyundaiTuc4 from './productImg/hyundai26_4.jpg'
+    import HyundaiTuc7 from './productImg/hyundai26_7.jpg'
+    import HyundaiTuc8 from './productImg/hyundai26_8.jpg'
+    import HyundaiTuc9 from './productImg/hyundai26_9.jpg'
+    import HyundaiTuc10 from './productImg/hyundai26_10.jpg'
+    import HyundaiTuc11 from './productImg/hyundai26_11.jpg'
+    import HyundaiTuc12 from './productImg/hyundai26_12.jpg'
+    import HyundaiTuc13 from './productImg/hyundai26_13.jpg'
+    import HyundaiTuc14 from './productImg/hyundai26_14.jpg'
+    import HyundaiTuc15 from './productImg/hyundai26_15.jpg'
+
+   
+ 
+
+    //2018 BMW X6
+
+    import bmwx1 from './productImg/2018_BMW_1.jpg'
+    import bmwx2 from './productImg/2018_BMW_2.jpg'
+    import bmwx3 from './productImg/2018_BMW_3.jpg'
+    import bmwx4 from './productImg/2018_BMW_4.jpg'
+    import bmwx5 from './productImg/2018_BMW_5.jpg'
+    import bmwx6 from './productImg/2018_BMW_6.jpg'
+    import bmwx7 from './productImg/2018_BMW_7.jpg'
+   
+
+
+    //2010 Nissan 
+
+    import nissan10_1 from './productImg/Nissan10_1.jpg'
+    import nissan10_2 from './productImg/Nissan10_2.jpg'
+    import nissan10_3 from './productImg/Nissan10_3.jpg'
+    import nissan10_4 from './productImg/Nissan10_4.jpg'
+    import nissan10_5 from './productImg/Nissan10_5.jpg'
+    import nissan10_6 from './productImg/Nissan10_6.jpg'
+    import nissan10_7 from './productImg/Nissan10_7.jpg'
+    
+
+//Honda Civic Sport 2020
+
+import honda_20_1 from './productImg/honda_20_1.jpg'
+import honda_20_2 from './productImg/honda_20_2.jpg'
+import honda_20_3 from './productImg/honda_20_3.jpg'
+import honda_20_4 from './productImg/honda_20_4.jpg'
+import honda_20_5 from './productImg/honda_20_5.jpg'
+import honda_20_6 from './productImg/honda_20_6.jpg'
+import honda_20_7 from './productImg/honda_20_7.jpg'
+import honda_20_8 from './productImg/honda_20_8.jpg'
+import honda_20_9 from './productImg/Honda_CR-V_2018_9.jpg'
+import honda_20_10 from './productImg/Honda_CR-V_2018_9.jpg'
+
+//2014 kia sorrento 
+
+import Kiasore_1 from './productImg/Kiasore_1.jpg'
+import kiasore_2 from './productImg/Kiasore_2.jpg'
+import kiasore_3 from './productImg/Kiasore_3.jpg'
+import kiasore_4 from './productImg/Kiasore_4.jpg'
+import kiasore_5 from './productImg/Kiasore_5.jpg'
+import kiasore_6 from './productImg/Kiasore_6.jpg'
+
+
+
+//c300 
+
+import c300_1 from './productImg/c300_1.jpg'
+import c300_2 from './productImg/c300_2.jpg'
+import c300_3 from './productImg/c300_3.jpg'
+import c300_4 from './productImg/c300_4.jpg'
+import c300_5 from './productImg/c300_5.jpg'
+import c300_6 from './productImg/c300_6.jpg'
+import c300_7 from './productImg/c300_7.jpg'
+import c300_8 from './productImg/c300_8.jpg'
+
+
+// 2008 honda 
+
+import hondaEX_1 from './productImg/hondaex_1.jpg'
+import hondaEX_2 from './productImg/hondaex_2.jpg'
+import hondaEX_3 from './productImg/hondaex_3.jpg'
+
+
+
+//audi a3
+
+
+import audia3_1 from './productImg/audia3_1.jpg'
+import audia3_2 from './productImg/audia3_2.jpg'
+import audia3_3 from './productImg/audia3_3.jpg'
+import audia3_4 from './productImg/audia3_4.jpg'
+import audia3_5 from './productImg/audia3_5.jpg'
+import audia3_6 from './productImg/audia3_6.jpg'
+
+
+
+//2017 Ford Fusion SE Hybrid Sedan 4D
+
+import fordFSE_1 from './productImg/fordFSE_1.jpg'
+import fordFSE_2 from './productImg/fordFSE_2.jpg'
+import fordFSE_3 from './productImg/fordFSE_3.jpg'
+
+
+
+
+
+
+
+
 
 // products.ts
 export interface Product {
@@ -327,9 +467,490 @@ export interface Product {
        
       ]
     }
+,
+    {
+        id: "10",
+      name: "2015 Porsche Macan S ",
+      price: 19000,
+      description: "The 2015 Porsche Macan S is a luxury compact SUV that combines high performance with utility. It features a 3.0-liter V6 turbocharged engine producing 340 horsepower, paired with a 7-speed dual-clutch automatic transmission and all-wheel drive. The Macan S delivers a sporty driving experience typical of Porsche, with strong acceleration and agile handling. It achieves 0-60 mph in around 5.2 seconds and has a fuel economy of about 17 mpg city and 23 mpg highway.",
+      images: [
+       porsche1,
+       porsche2,
+       porsche3,
+       porsche4,
+       porsche5,
+       
+      ]
+    }
+,
+    {
+        id: "11",
+      name: "2017 Honda Accord",
+      price: 25000,
+      description: "The 2017 Honda Accord offers a blend of efficiency, reliability, and style. It comes in various trims, including sedans and coupes, with engine options ranging from a 2.4-liter four-cylinder to a 3.5-liter V6. The four-cylinder engine produces around 185 horsepower, while the V6 version offers more power, reaching up to 278 horsepower. The car is known for its smooth ride, comfortable interior, and responsive handling.",
+      images: [
+       honda1,
+       honda2,
+       honda3,
+       honda4,
+       honda5,
+       honda6,
+       honda7,
+       honda8,
+       honda9,
+       honda10,
+       honda11,
+       honda12,
+       honda13,
+       honda14,
+      
+       
+      ]
+    }
+,
+    {
+        id: "12",
+      name: "The 2016 Hyundai Tucson Sport SUV 4D ",
+      price: 12000,
+      description: "",
+      images: [
+        HyundaiTuc1,
+        HyundaiTuc2,
+        HyundaiTuc3,
+        HyundaiTuc4,
+        
+        HyundaiTuc7,
+        HyundaiTuc8,
+        HyundaiTuc9,
+        HyundaiTuc10,
+        HyundaiTuc11,
+        HyundaiTuc12,
+        HyundaiTuc13,
+        HyundaiTuc14,
+        HyundaiTuc15,
+        
+       
+      ]
+    }
+,
+    {
+        id: "13",
+      name: "2018 BMW X6",
+      price: 36000,
+      description: "The 2018 BMW X6 is a luxury SUV known for its sporty design and high-performance capabilities. It features a distinctive coupe-like silhouette with a sloped roof, which gives it a stylish appearance while compromising on some cargo space compared to traditional SUVs like the BMW X5.",
+      images: [
+       
+       bmwx2,
+       bmwx1,
+       bmwx3,
+       bmwx4,
+       bmwx5,
+       bmwx6,
+       bmwx7
+      ]
+    }
+,
+    {
+        id: "14",
+      name: "2010 Nissan Nissan Maxima SV with 87k",
+      price: 5000,
+      description: "The 2010 Nissan Maxima SV is a stylish sedan that combines sporty performance with luxury features.Engine and Performance: It is powered by a 3.5-liter V6 engine delivering 290 horsepower, paired with a continuously variable transmission (CVT). This setup provides smooth acceleration without traditional gear shifting, enhancing the driving ",
+      images: [
+       nissan10_1,
+       nissan10_2,
+       nissan10_3,
+       nissan10_4,
+       nissan10_5,
+       nissan10_6,
+       nissan10_7,
+       
+      ]
+    }
+,
+    {
+        id: "15",
+      name: "Honda Civic Sport 2020",
+      price: 18000,
+      description: "The 2020 Honda Civic Sport is a reliable compact car that features a 158-horsepower 2.0-liter engine, spacious interior, impressive fuel efficiency, and advanced safety technology, making it a top choice for practical and performance-minded drivers",
+      images: [
+       honda_20_1,
+       honda_20_2,
+       honda_20_3,
+       honda_20_4,
+       honda_20_5,
+       honda_20_6,
+       honda_20_7,
+       honda_20_8,
+       honda_20_9,
+       honda_20_10,
+       
+      ]
+    }
+,
+    {
+        id: "16",
+      name: "2014 Kia Sorento",
+      price: 12000,
+      description: "The 2014 Kia Sorento is a versatile midsize SUV available in multiple configurations, offering either two or three rows of seating",
+      images: [
+        kiasore_2,
+        Kiasore_1,
+        kiasore_3,
+        kiasore_4,
+        kiasore_5,
+        kiasore_6,
+        
+     
+      ]
+    }
+,
+    {
+        id: "17",
+      name: "2017 Mercedes-Benz C-Class C300 Coupe",
+      price: 18000,
+      description: "The 2017 Mercedes-Benz C-Class C300 Coupe features a 2.0-liter turbocharged inline-four engine that produces 241 horsepower and offers a smooth ride with a 7-speed automatic transmission. It combines luxury with performance, achieving a combined fuel economy of around 26 mpg.",
+      images: [
+       c300_1,
+       c300_2,
+       c300_3,
+       c300_4,
+       c300_5,
+       c300_6,
+       c300_7,
+       c300_8,
+       
+      ]
+    }
+,
+    {
+        id: "18",
+      name: "2008 Honda Civic EX Sedan 4D",
+      price: 6500,
+      description: "The 2008 Honda Civic EX Sedan 4D is a reliable and fuel-efficient compact car, featuring a 2.0L 4-cylinder engine that balances performance and economy, coupled with a spacious interior and a host of standard features like a sunroof and premium audio system.",
+      images: [
+       hondaEX_1,
+       hondaEX_2,
+       hondaEX_3,
+       
+      ]
+    }
+,
+    {
+        id: "19",
+      name: "2018 Audi A3",
+      price: 32000,
+      description: "The 2018 Audi A3 is a compact luxury car that offers a blend of performance, quality, and advanced technology, making it a strong contender in its segment. It features a refined interior with high-quality materials, impressive engine options, and the choice of quattro all-wheel drive for enhanced handling",
+      images: [
+      audia3_1,
+      audia3_2,
+      audia3_3,
+      audia3_4,
+      audia3_5,
+      audia3_6,
+      
+      ]
+    }
+,
+    {
+        id: "20",
+      name: "2017 Ford Fusion SE Hybrid Sedan 4D",
+      price: 14000,
+      description: "The 2017 Ford Fusion SE Hybrid Sedan 4D offers a comfortable and efficient driving experience with a 2.0L 4-cylinder engine combined with an electric motor, producing a total of 188 horsepower. It features a spacious interior, advanced safety technology, and a range of tech options including a touchscreen infotainment system and smartphone integration",
+      images: [
+       fordFSE_1,
+       fordFSE_2,
+       fordFSE_3
+      ]
+    }
 // ,
     // {
-    //     id: "10",
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
+    //   name: "",
+    //   price: 25000,
+    //   description: "",
+    //   images: [
+    //    img,
+    //    img
+    //   ]
+    // }
+// ,
+    // {
+    //     id: "",
     //   name: "",
     //   price: 25000,
     //   description: "",

@@ -53,7 +53,7 @@ const ProductList: React.FC = () => {
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [likes, setLikes] = useState<number>(Math.floor(Math.random() * 901) + 100); // Random likes between 100 and 1000
+  const [likes, setLikes] = useState<number>(Math.floor(Math.random() * 1501) + 100); // Random likes between 100 and 1000
   const [isLiked, setIsLiked] = useState<boolean>(false);
 
   const handleNextImage = () => {
@@ -89,13 +89,13 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
         />
         <button
           onClick={handlePreviousImage}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-200 p-1 rounded-full"
+          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-200 p-3 rounded-full"
         >
           &lt;
         </button>
         <button
           onClick={handleNextImage}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-200 p-1 rounded-full"
+          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-200 p-3 rounded-full"
         >
           &gt;
         </button>

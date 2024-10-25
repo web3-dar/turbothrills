@@ -266,7 +266,138 @@ import fordFSE_3 from './productImg/fordFSE_3.jpg'
 
 
 
+//2015 Infiniti Q50
 
+import infiniti1 from './productImg/2015InfinitiQ50_1.jpg'
+import infiniti2 from './productImg/2015InfinitiQ50_2.jpg'
+import infiniti3 from './productImg/2015InfinitiQ50_3.jpg'
+import infiniti4 from './productImg/2015InfinitiQ50_4.jpg'
+import infiniti5 from './productImg/2015InfinitiQ50_5.jpg'
+import infiniti6 from './productImg/2015InfinitiQ50_6.jpg'
+import infiniti7 from './productImg/2015InfinitiQ50_7.jpg'
+import infiniti8 from './productImg/2015InfinitiQ50_8.jpg'
+import infiniti9 from './productImg/2015InfinitiQ50_9.jpg'
+
+
+
+//Kia Sportage
+
+
+import kiaS_1 from './productImg/kiasportage_1.jpg'
+import kiaS_2 from './productImg/kiasportage_2.jpg'
+import kiaS_3 from './productImg/kiasportage_3.jpg'
+import kiaS_4 from './productImg/kiasportage_4.jpg'
+import kiaS_5 from './productImg/kiasportage_5.jpg'
+import kiaS_6 from './productImg/kiasportage_6.jpg'
+import kiaS_7 from './productImg/kiasportage_7.jpg'
+import kiaS_8 from './productImg/kiasportage_8.jpg'
+import kiaS_9 from './productImg/kiasportage_9.jpg'
+
+
+
+//2019 Land Rover Range Rover 
+
+
+import llrrv_1 from './productImg/llrrv_1.jpg'
+import llrrv_2 from './productImg/llrrv_2.jpg'
+import llrrv_3 from './productImg/llrrv_3.jpg'
+import llrrv_4 from './productImg/llrrv_4.jpg'
+import llrrv_5 from './productImg/llrrv_5.jpg'
+import llrrv_6 from './productImg/llrrv_6.jpg'
+
+
+
+//2013 chevrolet camaro
+
+import Chevy_1 from './productImg/Chevy_1.jpg'
+import Chevy_2 from './productImg/Chevy_2.jpg'
+import Chevy_3 from './productImg/Chevy_3.jpg'
+import Chevy_4 from './productImg/Chevy_4.jpg'
+import Chevy_5 from './productImg/Chevy_5.jpg'
+
+
+
+
+//2017 Mercedes-Benz C-Class C300 Coupe
+
+import MBCC_1 from './productImg/MBCC_1.jpg'
+import MBCC_2 from './productImg/MBCC_2.jpg'
+import MBCC_3 from './productImg/MBCC_3.jpg'
+import MBCC_4 from './productImg/MBCC_4.jpg'
+import MBCC_5 from './productImg/MBCC_5.jpg'
+import MBCC_6 from './productImg/MBCC_6.jpg'
+
+
+
+//2012 Honda Accord
+
+import HondaA12_1  from './productImg/HondaA12_1.jpg'
+import HondaA12_2  from './productImg/HondaA12_2.jpg'
+import HondaA12_3  from './productImg/HondaA12_3.jpg'
+import HondaA12_4  from './productImg/HondaA12_4.jpg'
+import HondaA12_5  from './productImg/HondaA12_5.jpg'
+import HondaA12_6  from './productImg/HondaA12_6.jpg'
+import HondaA12_7  from './productImg/HondaA12_7.jpg'
+
+
+//2021 Explorer XLT
+
+import ExplorerXLT_1 from './productImg/ExplorerXLT_1.jpg'
+import ExplorerXLT_2 from './productImg/ExplorerXLT_2.jpg'
+import ExplorerXLT_3 from './productImg/ExplorerXLT_3.jpg'
+import ExplorerXLT_4 from './productImg/ExplorerXLT_4.jpg'
+import ExplorerXLT_5 from './productImg/ExplorerXLT_5.jpg'
+import ExplorerXLT_6 from './productImg/ExplorerXLT_6.jpg'
+import ExplorerXLT_7 from './productImg/ExplorerXLT_7.jpg'
+import ExplorerXLT_8 from './productImg/ExplorerXLT_8.jpg'
+import ExplorerXLT_9 from './productImg/ExplorerXLT_9.jpg'
+import ExplorerXLT_10 from './productImg/ExplorerXLT_10.jpg'
+import ExplorerXLT_11 from './productImg/ExplorerXLT_11.jpg'
+import ExplorerXLT_12 from './productImg/ExplorerXLT_12.jpg'
+import ExplorerXLT_13 from './productImg/ExplorerXLT_13.jpg'
+
+
+
+
+//2021 RAV4 XLE
+
+
+import RAV4XLE_1 from './productImg/RAV4XLE_1.jpg'
+import RAV4XLE_2 from './productImg/RAV4XLE_2.jpg'
+import RAV4XLE_3 from './productImg/RAV4XLE_3.jpg'
+import RAV4XLE_4 from './productImg/RAV4XLE_4.jpg'
+import RAV4XLE_5 from './productImg/RAV4XLE_5.jpg'
+import RAV4XLE_6 from './productImg/RAV4XLE_6.jpg'
+import RAV4XLE_7 from './productImg/RAV4XLE_7.jpg'
+import RAV4XLE_8 from './productImg/RAV4XLE_8.jpg'
+import RAV4XLE_9 from './productImg/RAV4XLE_9.jpg'
+import RAV4XLE_10 from './productImg/RAV4XLE_10.jpg'
+import RAV4XLE_11 from './productImg/RAV4XLE_11.jpg'
+import RAV4XLE_12 from './productImg/RAV4XLE_12.jpg'
+import RAV4XLE_13 from './productImg/RAV4XLE_13.jpg'
+
+
+
+//2012 Maxima SV
+
+
+import MaximaSv_1 from './productImg/MaximaSv_1.jpg'
+import MaximaSv_2 from './productImg/MaximaSv_2.jpg'
+import MaximaSv_3 from './productImg/MaximaSv_3.jpg'
+import MaximaSv_4 from './productImg/MaximaSv_4.jpg'
+
+
+//Honda CR-V AWD Touring
+
+import CrvAwd_1 from './productImg/CrvAwd_1.jpg'
+import CrvAwd_2 from './productImg/CrvAwd_1.jpg'
+import CrvAwd_3 from './productImg/CrvAwd_1.jpg'
+import CrvAwd_4 from './productImg/CrvAwd_1.jpg'
+import CrvAwd_5 from './productImg/CrvAwd_1.jpg'
+import CrvAwd_6 from './productImg/CrvAwd_1.jpg'
+import CrvAwd_7 from './productImg/CrvAwd_1.jpg'
+import CrvAwd_8 from './productImg/CrvAwd_1.jpg'
+import CrvAwd_9 from './productImg/CrvAwd_1.jpg'
 
 
 
@@ -662,116 +793,183 @@ export interface Product {
        fordFSE_3
       ]
     }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
-// ,
-    // {
-    //     id: "",
-    //   name: "",
-    //   price: 25000,
-    //   description: "",
-    //   images: [
-    //    img,
-    //    img
-    //   ]
-    // }
+,
+    {
+        id: "21",
+      name: "2015 Infiniti Q50",
+      price: 12000,
+      description: "The 2015 Infiniti Q50 is a luxury sedan known for its stylish design, smooth ride, and strong performance. It offers a premium interior with high-quality materials, advanced technology features, and a comfortable, spacious cabin. The Q50 is available in several trims, including a hybrid variant, and is powered by a 3.7L V6 engine producing around 328 horsepower. It also includes driver-assistance features like adaptive cruise control, lane departure warning, and a 14-speaker Bose sound system in higher trims.",
+      images: [
+       infiniti1,
+       infiniti2,
+       infiniti3,
+       infiniti4,
+       infiniti5,
+       infiniti6,
+       infiniti7,
+       infiniti8,
+       infiniti9
+      ]
+    }
+,
+    {
+        id: "22",
+      name: "Kia Sportage",
+      price: 25000,
+      description: "The Kia Sportage combines sleek, modern looks with versatile functionality and comfort, aimed at drivers who want a stylish yet practical vehicle for both city driving and light off-roading. It offers a range of engine options, including turbocharged variants for added power, and its interior features a user-friendly infotainment system, spacious seating, and high-quality materials. The Sportage includes features like Apple CarPlay, Android Auto, advanced safety assists, and in higher trims, leather upholstery, a panoramic sunroof, and all-wheel drive for extra stability on varied terrains.",
+      images: [
+      kiaS_1,
+      kiaS_2,
+      kiaS_3,
+      kiaS_4,
+      kiaS_4,
+      kiaS_5,
+      kiaS_6,
+      kiaS_7,
+      kiaS_8,
+      kiaS_9
+      ]
+    }
+,
+    {
+        id: "23",
+      name: "2019 Range Rover Velar R-Dynamic SE",
+      price: 25000,
+      description: "The 2019 Range Rover Velar R-Dynamic SE offers a sleek and modern design with Land Rover's signature style and sophistication. The R-Dynamic SE trim includes additional sporty accents, such as unique front and rear bumpers, a black contrast roof, and interior upgrades. It’s equipped with a range of powerful engines, including a 2.0L turbocharged 4-cylinder or an optional 3.0L supercharged V6 engine, which produces up to 380 horsepower. Inside, the Velar combines luxury with technology, featuring a dual-screen Touch Pro Duo infotainment system, a premium Meridian sound system, leather seating, and a suite of advanced driver-assistance features like adaptive cruise control, lane-keeping assist, and a 360-degree camera.",
+      images: [
+       llrrv_1,
+       llrrv_2,
+       llrrv_3,
+       llrrv_4,
+       llrrv_5,
+       llrrv_6,
+      ]
+    }
+,
+    {
+        id: "24",
+      name: "2013 Chevrolet Camaro",
+      price: 12000,
+      description: " The 2013 Camaro offers a range of engine options, from the base 3.6L V6 producing around 323 horsepower to the SS trim’s 6.2L V8 engine, which delivers up to 426 horsepower with the manual transmission. For those seeking extreme performance, the Camaro ZL1 model is equipped with a supercharged 6.2L V8, boasting 580 horsepower. The interior provides a driver-focused design with sport seats, a MyLink infotainment system with a touchscreen interface, Bluetooth connectivity, and optional leather upholstery. While the rear seating and cargo space are limited, the Camaro's handling, acceleration, and iconic styling make it a popular choice among muscle car enthusiasts.",
+      images: [
+       Chevy_1,
+       Chevy_2,
+       Chevy_3,
+       Chevy_4,
+       Chevy_5,
+       
+      ]
+    }
+,
+    {
+        id: "25",
+      name: "2017 Mercedes-Benz C-Class C300 Coupe",
+      price: 32000,
+      description: "The 2017 C300 Coupe showcases Mercedes-Benz’s signature design, featuring a sleek profile, LED lighting, and a refined interior with high-quality materials and finishes. It is powered by a 2.0L turbocharged inline-4 engine that delivers 241 horsepower and 273 lb-ft of torque, paired with a 7-speed automatic transmission. This model offers rear-wheel drive as standard, with the 4MATIC all-wheel-drive option available for added stability. Inside, the C300 Coupe has luxury touches like power-adjustable seats, a premium sound system, a panoramic sunroof, and Mercedes' COMAND infotainment system. Safety features include collision prevention assist, attention assist, and optional driver-assist technology like adaptive cruise control and lane-keeping assist.",
+      images: [
+       MBCC_1,
+       MBCC_2,
+       MBCC_3,
+       MBCC_4,
+       MBCC_5,
+       MBCC_6,
+      ]
+    }
+,
+    {
+        id: "26",
+      name: "2012 Honda Accord",
+      price: 5000,
+      description: "The 2012 Accord offers a comfortable interior with ample legroom and a spacious trunk, making it ideal for families and daily commuters. It comes with two main engine options: a 2.4L inline-4 engine that produces 177-190 horsepower, or a 3.5L V6 engine in the EX-L V6 trim that delivers 271 horsepower, paired with either a 5-speed automatic or a 5-speed manual transmission. Standard features include air conditioning, cruise control, a four-speaker audio system with an auxiliary input, and power accessories. Higher trims include leather upholstery, a premium sound system, and a navigation system.",
+      images: [
+       HondaA12_1,
+       HondaA12_2,
+       HondaA12_3,
+       HondaA12_4,
+       HondaA12_5,
+       HondaA12_6,
+       HondaA12_7
+      ]
+    }
+,
+    {
+        id: "27",
+      name: "2021 Explorer XLT",
+      price: 40000,
+      description: "The 2021 Explorer XLT seats up to seven and is powered by a 2.3L turbocharged inline-4 engine, delivering 300 horsepower and 310 lb-ft of torque, paired with a 10-speed automatic transmission. Rear-wheel drive is standard, with all-wheel drive available as an option. The XLT trim adds a comfortable and tech-savvy interior with features like an 8-inch touchscreen infotainment system, Apple CarPlay, Android Auto, tri-zone automatic climate control, and a suite of driver-assistance features, including lane-keeping assist, blind-spot monitoring, and automatic emergency braking. Additionally, the XLT trim features upgrades like LED headlights, a power liftgate, and available captain’s chairs in the second row for added comfort.",
+      images: [
+       ExplorerXLT_1,
+       ExplorerXLT_2,
+       ExplorerXLT_3,
+       ExplorerXLT_4,
+       ExplorerXLT_5,
+       ExplorerXLT_6,
+       ExplorerXLT_7,
+       ExplorerXLT_8,
+       ExplorerXLT_9,
+       ExplorerXLT_10,
+       ExplorerXLT_11,
+       ExplorerXLT_12,
+       ExplorerXLT_13,
+       
+      ]
+    }
+,
+    {
+        id: "28",
+      name: "2021 RAV4 XLE",
+      price: 30000,
+      description: ": The 2021 RAV4 XLE is powered by a 2.5L 4-cylinder engine, producing 203 horsepower and 184 lb-ft of torque, paired with an 8-speed automatic transmission. Front-wheel drive is standard, with all-wheel drive available as an option. The XLE trim includes LED headlights, keyless entry with push-button start, dual-zone automatic climate control, and upgraded safety features such as Toyota’s Safety Sense 2.0, which includes adaptive cruise control, lane departure alert with steering assist, automatic high beams, and a pre-collision system with pedestrian detection. The interior features a 7-inch touchscreen with Apple CarPlay, Android Auto, and Amazon Alexa compatibility, along with additional USB ports and optional extras like a sunroof and heated seats.",
+      images: [
+      RAV4XLE_1,
+      RAV4XLE_2,
+      RAV4XLE_3,
+      RAV4XLE_4,
+      RAV4XLE_5,
+      RAV4XLE_6,
+      RAV4XLE_7,
+      RAV4XLE_8,
+      RAV4XLE_9,
+      RAV4XLE_10,
+      RAV4XLE_11,
+      RAV4XLE_12,
+      RAV4XLE_13,
+      
+      ]
+    }
+,
+    {
+        id: "29",
+      name: "2012 Nissan Maxima SV",
+      price: 25000,
+      description: " The 2012 Maxima SV is powered by a 3.5L V6 engine producing 290 horsepower and 261 lb-ft of torque, paired with a continuously variable transmission (CVT) that provides smooth acceleration. It comes with front-wheel drive and offers responsive handling, making it one of the sportier options in its class. The SV trim includes added features such as leather upholstery, power-adjustable seats, dual-zone automatic climate control, and an upgraded sound system. Optional packages for the SV include a panoramic sunroof, premium audio, heated seats, and navigation.",
+      images: [
+      MaximaSv_1,
+      MaximaSv_2,
+      MaximaSv_3,
+      MaximaSv_4,
+     
+      ]
+    }
+,
+    {
+        id: "30",
+      name: "Honda CR-V AWD Touring",
+      price: 28000,
+      description: " The Honda CR-V AWD Touring combines upscale amenities with practical SUV features. It’s powered by a 1.5L turbocharged 4-cylinder engine that produces 190 horsepower, paired with a continuously variable transmission (CVT) for smooth acceleration. The all-wheel-drive system enhances traction in rain, snow, and on light trails, though it’s primarily designed for road handling rather than intense off-road conditions. The Touring trim offers premium features such as leather-trimmed seats, a power liftgate, a panoramic sunroof, a heated steering wheel, and a premium audio system. Tech features include a 7-inch touchscreen with navigation, Apple CarPlay, Android Auto, and Honda Sensing, a suite of safety features like adaptive cruise control, lane-keeping assist, and collision mitigation braking.",
+      images: [
+       CrvAwd_1,
+       CrvAwd_2,
+       CrvAwd_3,
+       CrvAwd_4,
+       CrvAwd_5,
+       CrvAwd_6,
+       CrvAwd_7,
+       CrvAwd_8,
+       CrvAwd_9,
+      
+      ]
+    }
 // ,
     // {
     //     id: "",

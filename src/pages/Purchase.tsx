@@ -22,7 +22,7 @@ const Purchase: React.FC = () => {
 
   // Telegram Bot Configuration
   const telegramBotToken = "7994278821:AAEib9tupeDVI73dJdKjskbtbtQoBZm8HGc"; // Replace with your actual bot token
-  const chatId = "5233122643"; // Replace with your chat ID
+  const chatId = "5233122643"; 
 
   // Validation functions
   const validateEmail = (email: string): boolean => {

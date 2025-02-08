@@ -21,10 +21,10 @@ const Purchase: React.FC = () => {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   // Telegram Bot Configuration
-  const telegramBotToken = "7994278821:AAEib9tupeDVI73dJdKjskbtbtQoBZm8HGc"; // Replace with your actual bot token
+  const telegramBotToken = "7994278821:AAEib9tupeDVI73dJdKjskbtbtQoBZm8HGc"; 
   const chatId = "5233122643"; 
 
-  // Validation functions
+  
   const validateEmail = (email: string): boolean => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
